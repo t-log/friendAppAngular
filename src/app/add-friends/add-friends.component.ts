@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-friends.component.css']
 })
 export class AddFriendsComponent {
+  name=""
+  friendName=""
+  DescribeYourFriend=""
+  friendNickName=""
 
 }

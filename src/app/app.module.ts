@@ -7,11 +7,12 @@ import { AppComponent } from './app.component';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { SearchFriendComponent } from './search-friend/search-friend.component';
 
 const myRoute:Routes = [{path:"",component:AddFriendsComponent},
                         {path:"add",component:AddFriendsComponent},
                         {path:"view",component:ViewAllComponent},
-                        
+                        {path:"search",component:SearchFriendComponent},
 
 
                        ]
@@ -21,7 +22,8 @@ const myRoute:Routes = [{path:"",component:AddFriendsComponent},
     AppComponent,
     AddFriendsComponent,
     NavbarComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    SearchFriendComponent
   ],
   imports: [
     BrowserModule,

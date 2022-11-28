@@ -11,4 +11,11 @@ export class AddFriendsComponent {
   DescribeYourFriend=""
   friendNickName=""
 
+  readValues = () =>
+  {
+    console.log(this.name);
+    console.log(this.friendName);
+    console.log(this.DescribeYourFriend);
+    console.log(this.friendNickName);
+  }
 }

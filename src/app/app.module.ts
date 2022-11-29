@@ -9,7 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { SearchFriendComponent } from './search-friend/search-friend.component';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 const myRoute:Routes = [{path:"",component:AddFriendsComponent},
                         {path:"add",component:AddFriendsComponent},
                         {path:"view",component:ViewAllComponent},
@@ -31,7 +31,9 @@ const myRoute:Routes = [{path:"",component:AddFriendsComponent},
     AppRoutingModule,
     RouterModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
